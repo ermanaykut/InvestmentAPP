@@ -3,7 +3,7 @@ import React from 'react';
 import globalStyle from '../../constants/style';
 import styles from './style';
 import {midRouteName} from '../../constants/variables';
-import Icon from '../Icon';
+import {Icon} from 'custom-components/src'
 import {colors} from '../../constants/colors';
 
 export default function CustomTabBar({state, descriptors, navigation}: any) {

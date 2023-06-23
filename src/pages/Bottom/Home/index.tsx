@@ -1,4 +1,4 @@
-import {FlatList, Pressable, Text, View} from 'react-native';
+import {FlatList, LogBox, Pressable, Text, View} from 'react-native';
 import React, {useEffect, useState} from 'react';
 import {getItem, setItem} from '../../../mmkv';
 import {IAllDetails} from '../../../constants/types';
@@ -6,8 +6,9 @@ import {FavItem} from './components';
 import globalStyle from '../../../constants/style';
 import {useIsFocused} from '@react-navigation/native';
 import styles from './style';
-import Icon from '../../../components/Icon';
+import {Icon} from 'custom-components/src'
 
+LogBox.ignoreAllLogs()
 let storageName = 'favorites';
 
 export default function Home() {
